@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Heading elements all the way to <h6>-->
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+
+    <!--This is a paragraph and main is the dominant content of the document -->
+    <main>
+    <p>Write contents of a topic</p>
+    </main>
+    <!-- Image element self closing, alt is displayed if image not load-->
+    <img src = "https://www.freecatphotoapp.com/your-image.jpg" alt = "A business cat wearing a necktie">
+
+    <!-- anchor element to link to content outside of web page, target opens in new tab, use'#' as a placeholder-->
+    <a href="https://www.freecatphotoapp.com " target="_blank"> Cat photos</a>
+
+    <!--Creat internal links to different sections of the webpage, need to add to element referencing-->
+    <a href="contacts-header">Contacts</a>
+    <h2 id="contacts-header">Contacts</h2>
+
+    <!-- make elements i.e image into links-->
+    <a href ='#'><img src="https://www.bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
+
+    <!-- Unordered lists,bullet point,with list elements(<li>)-->
+        <ul>
+            <li>Birds</li>
+            <li>Sleeping</li>
+            <li>Cat food</li>
+            </ul>
+
+    <!--Ordered lists, numbered-->
+    <p>Top 3 things cats hate:</p>
+    <ol>
+      <li>Water</li>
+      <li>Dogs</li>
+      <li>Pats</li>
+      </ol>
+    
+    <!--input elements get input from user, placeholder = what is displayed before user input-->
+    <input type="text" placeholder = "Enter here">
+
+    <!--Build web forms submitting data with HTML, Button with submitt, required = form cant be submitted until complete-->
+    <form action="https://www.freecatphotoapp.com/submit-cat-photo">
+        <input type="text" required placeholder="cat photo URL">
+        <button type = 'submit'>Submit</button>
+        
+    <!--Radio buttons with labels, allows user to select only one of selection-->
+
+        <label for="indoor">
+            <input id = "indoor" type ="radio" name ="indoor-outdoor">Indoor
+        </label>
+        <label for="outdoor">
+            <input id ="outdoor" type ="radio" name = "indoor-outdoor">Outdoor
+        </label>
+    </form>
+
+</body>
+</html>
